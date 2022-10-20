@@ -1,0 +1,39 @@
+/* Grundlagen */
+:root 
+{--spacing-company: 3rem;
+--font-weight: 400;
+--border-radius: 0;}
+  
+
+  /* Schriften */
+  h2,
+  h3,
+  hgroup > :last-child 
+  {font-weight: 200;}
+  
+  small 
+  {color: var(--muted-color);}
+  
+
+  /* Banner/Navigationsbar */
+  .hero 
+  {background-image: url(8.jpg);
+  background-position: center;
+  background-size: cover;}
+
+
+  /* Navigation */
+  summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) 
+  {background-color: transparent;
+  color: var(--contrast-hover);}
+  
+
+  /* Grid */
+  @media (min-width: 992px) 
+  {main .grid 
+    {margin-left: 5cm;
+    margin-right: 5cm;} 
+
+  .links 
+  {float: left;
+  margin-right: 10px;} } 
